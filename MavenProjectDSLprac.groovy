@@ -7,7 +7,7 @@ job('FIrst-maven-project-dsl'){
 	         scm('* * * * *')
 	}
 	steps{
-	      maven('clean package', 'maven_samples/single-module/pom.xml')
+	      maven('clean package', 'maven-samples/single-module/pom.xml')
 	}
 	publishers{
 	          archiveArtifacts('**/*.jar')
