@@ -1,0 +1,26 @@
+pipeline{
+	agent any
+	stages{
+		stage('init'){
+			steps{
+				echo 'Hi this is simran'
+				echo 'We are starting the testing'
+			      }
+		}
+		stage('build'){
+			steps{
+				echo 'this is build stage'
+			     }
+		}	
+		stage('deploy'){
+			steps{
+				echo 'this is staging area'
+			     }
+		}
+		stage('deploy Production'){
+			steps{
+				echo 'this is production deployment area'
+			     }
+		}
+}
+}
